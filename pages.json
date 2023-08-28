@@ -1,0 +1,254 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "主页",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/chatList/chatList",
+			"style": {
+				"navigationBarTitleText": "聊天列表",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/trip/trip",
+			"style": {
+				"navigationBarTitleText": "行程",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+		    "path" : "pages/activityDetail/activityDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "行程",
+		        "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+		    }
+		    
+		},
+        {
+			"path": "pages/activityList/activityList",
+			"style": {
+				"navigationBarTitleText": "活动列表",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/chat/chat",
+			"style": {
+				"navigationBarTitleText": "聊天",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+			"style": {
+				"navigationBarTitleText": "注销账号"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+			"style": {
+				"navigationBarTitleText": "绑定手机号码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/login/login-smscode",
+			"style": {
+				"navigationBarTitleText": "手机验证码登录"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/register/register-by-email",
+			"style": {
+				"navigationBarTitleText": "邮箱验证码注册"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+			"style": {
+				"navigationBarTitleText": "通过邮箱重置密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/common/webview/webview",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "修改密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/register/register-admin",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "注册管理员账号"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "设置密码"
+			}
+		}, {
+			"path": "uni_modules/uni-id-pages/pages/userinfo/realname-verify/realname-verify",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "实名认证"
+			}
+		}, {
+			"path": "uni_modules/uni-im/pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"maxWidth": "960",
+				"navigationBarTitleText": "会话列表",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "uni_modules/uni-im/pages/chat/chat",
+			"style": {
+				"enablePullDownRefresh": false,
+				"maxWidth": "960",
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "uni_modules/uni-im/pages/userList/userList",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "用户列表"
+			}
+		}, {
+			"path": "uni_modules/uni-im/pages/contacts/addPeopleGroups/addPeopleGroups",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "link",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "uni_modules/uni-im/pages/contacts/contacts",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "通讯录"
+			}
+		},  {
+			"path": "uni_modules/uni-im/pages/contacts/notification/notification",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "新朋友"
+			}
+		},
+		{
+			"path": "uni_modules/uni-im/pages/contacts/createGroup/createGroup",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "创建群聊"
+			}
+		},
+		{
+			"path": "uni_modules/uni-im/pages/contacts/groupList/groupList",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "我的群聊"
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {
+		"loginPage": "uni_modules/uni-id-pages/pages/login/login-withpwd",
+		"needLogin": [
+			"uni_modules/uni-im/pages/userList/userList",
+			"uni_modules/uni-im/pages/contacts/contacts",
+			"pages/index/index",
+			"pages/home/home",
+			"pages/trip/trip",
+			"pages/chatList/chatList",
+			"uni_modules/uni-id-pages/pages/userinfo/userinfo"
+		]
+	},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/home.svg",
+				"selectedIconPath": "static/home_active.svg"
+			},
+			{
+				"pagePath": "pages/trip/trip",
+				"iconPath": "static/trip.svg",
+				"selectedIconPath": "static/trip_active.svg"
+			},
+			{
+				// "pagePath": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+				
+				// "pagePath": "pages/chatList/chatList",
+				"pagePath": "uni_modules/uni-im/pages/index/index",
+				"iconPath": "static/chatList.svg",
+				"selectedIconPath": "static/chatList_active.svg"
+			},
+			// {
+			// 	// "pagePath": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+			// 	"pagePath": "uni_modules/uni-im/pages/contacts/contacts",
+			// 	"iconPath": "static/chatList.svg",
+			// 	"selectedIconPath": "static/chatList_active.svg"
+			// },
+			{
+				"pagePath": "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+				"iconPath": "static/me.svg",
+				"selectedIconPath": "static/me_active.svg"
+			}
+		]
+	}
+}
