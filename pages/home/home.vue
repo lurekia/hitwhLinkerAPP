@@ -20,7 +20,7 @@
 				<view class="today-date">
 				</view>
 				<view class="recommend-part">
-					
+					...
 				</view>
 			</view>
 		</view>
