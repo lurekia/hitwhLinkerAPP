@@ -18,9 +18,18 @@
 			</view>
 			<view class="campus-recommend">
 				<view class="today-date">
+					<view class="date-day">
+						{{currentDate.slice(-2)}}
+					</view>
+					<view class="date-month">{{currentDate.slice(0,7)}}</view>
 				</view>
 				<view class="recommend-part">
-					...
+					<view v-for="(item,index) in todayData" :key="index" class="recommend-li">
+						<view class="content-wrapper">
+						      <uni-icons type="sound" size="15" color="#e6db74" class="view-num"></uni-icons>
+						      <text class="item-text">{{ item }}</text>
+						</view>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -36,6 +45,9 @@
 		computed,
 		watch
 	} from 'vue'
+	import {
+		onLoad,onInit
+	} from '@dcloudio/uni-app'
 	const data = reactive([
 		{
 			src:'https://cdn.pixabay.com/photo/2022/03/31/14/53/camp-7103189_1280.png',//活动的图片
@@ -163,13 +175,25 @@
 		console.log(open);
 		console.log('666');
 	}
+	var currentDate = ref('')
+	const todayData = ref(['现在图书馆有空余的靠窗座位啦！','你有新出的成绩，请查收','今日食堂有新出的菜品，要不要去看看？'])
+	const getCurrentDate = ()=>{
+		 const date = new Date();
+		  const year = date.getFullYear();
+		  const month = String(date.getMonth() + 1).padStart(2, '0');
+		  const day = String(date.getDate()).padStart(2, '0');
+		  currentDate.value = `${year}.${month}.${day}`;
+	}
+	onLoad(() => {
+		getCurrentDate();
+	})
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.homeBody {
 		padding: 10rpx  40rpx  0 40rpx;
 		.today {
-			width: 90%;
+			width: 100%;
 			height: 200rpx;
 			margin: 0 auto;
 			margin-bottom: 20rpx;
@@ -201,6 +225,60 @@
 			font-weight: 600;
 			font-size: 50rpx;
 			margin-bottom: 40rpx;
+		}
+		.campus-recommend {
+			width: 95%;
+			margin: 30rpx auto;
+			background-color: #ebfdff;
+			border: 1rpx solid #ebfdff;
+			border-radius: 30rpx;
+			height:300rpx;
+			display: flex;
+			align-items: center;
+			.today-date {
+				width: 160rpx;
+				height:160rpx;
+				margin:40rpx 0rpx;
+				background: url('../../static/todayTimeBGI.jpg') no-repeat;
+				background-size: contain;
+				color: #fff;
+				padding: 20rpx 0rpx 20rpx 0rpx;
+				.date-day {
+					font-size: 50rpx;
+					padding: 0rpx 50rpx 0rpx 50rpx;
+				}
+				.date-month {
+					font-size: 20rpx;
+					padding: 0rpx 30rpx 0rpx 40rpx;
+				}
+			}
+			.recommend-part {
+				flex: 1;
+				height: 90%;
+				margin: auto 20rpx;
+				border: 5rpx solid #cfe8fc;
+				border-radius: 3rpx;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				// white-space: nowrap; /* 禁止文字换行 */
+				// overflow: hidden; /* 隐藏溢出部分的文字 */
+			 //    text-overflow: ellipsis; /* 显示省略号 */
+				.recommend-li {
+					
+					border-bottom: 1rpx solid #cfe8fc;
+					padding-right: 10rpx;
+					color: #999;
+					margin-bottom: 20rpx;
+					.content-wrapper {
+					  display: flex;
+					  align-items: center;
+					  overflow: hidden;
+					  text-overflow: ellipsis;
+					  white-space: nowrap;
+					}
+				}
+			}
 		}
 		
 		
