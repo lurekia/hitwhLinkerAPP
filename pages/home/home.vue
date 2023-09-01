@@ -16,18 +16,25 @@
 				</view>
 				<turns :data="data" @achieve="achieve"></turns>
 			</view>
-			<view class="campus-recommend">
-				<view class="today-date">
-					<view class="date-day">
-						{{currentDate.slice(-2)}}
-					</view>
-					<view class="date-month">{{currentDate.slice(0,7)}}</view>
+			
+			<view class="campus-serve">
+				<view class="part-in-text">
+					校园服务
 				</view>
-				<view class="recommend-part">
-					<view v-for="(item,index) in todayData" :key="index" class="recommend-li">
-						<view class="content-wrapper">
-						      <uni-icons type="sound" size="15" color="#e6db74" class="view-num"></uni-icons>
-						      <text class="item-text">{{ item }}</text>
+				<view class="campus-recommend">
+					<view class="today-date">
+						<view class="date-day">
+							{{currentDate.slice(-2)}}
+						</view>
+						<view class="date-month">{{currentDate.slice(0,7)}}</view>
+					</view>
+					<view class="recommend-part">
+						<view v-for="(item,index) in todayData" :key="index" class="recommend-li">
+							<view class="content-wrapper">
+							      <uni-icons type="sound" size="15" color="#e6db74" class="view-num"></uni-icons>
+								  &nbsp;&nbsp;
+							      <text class="item-text">{{ item }}</text>
+							</view>
 						</view>
 					</view>
 				</view>
@@ -229,6 +236,7 @@
 		.campus-recommend {
 			width: 95%;
 			margin: 30rpx auto;
+			margin-bottom:0rpx;
 			background-color: #ebfdff;
 			border: 1rpx solid #ebfdff;
 			border-radius: 30rpx;
