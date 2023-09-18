@@ -244,7 +244,6 @@
 	  overflow-y: scroll; /* 内容超出自动滚动 */
 	  border-top-left-radius: 20rpx;
 	  border-top-right-radius: 20rpx;
-	  
 	}
 	.my-list ::v-deep .uni-list {
 		border-top-left-radius: 20rpx;
